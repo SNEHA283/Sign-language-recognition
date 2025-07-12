@@ -20,18 +20,15 @@ A computer vision-based sign language recognition system that can recognize numb
 This project detects hand gestures for numbers from 1 to 10 and is easily extendable to alphabets and custom gestures. The system uses a trained CNN model for gesture recognition.
 
 ## 🗂 Project Structure
-- `create_gesture.py`: Script to collect gesture images
-- `model_gesture.py`: Script to build and train the model
-- `test_model.py`: Script to test real-time recognition
+SignLanguageRecognition/
+│
+├── create_gesture.py # Capture and save gesture images
+├── train_model.py # Train CNN on gesture data
+├── recognize_gesture.py # Real-time gesture recognition
+├── best_model_dataflair3.h5 # Saved trained model 
+├── README.md
 
 ## 📁 Dataset
 Custom dataset created via webcam input.
 
-## ⚙️ How to Run
-1. Clone the repo
-2. Run `create_gesture.py` to collect gesture data
-3. Train using `model_gesture.py`
-4. Test live recognition with `test_model.py`
 
-## 🔒 License
-[MIT](LICENSE)
